@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me - Divine Uwimana</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="about">
+    <div style="display: flex; align-items: center; gap: 15px; margin-top: 20px;">
+      <img src="images/IMG_4911.PNG" alt="Photo of Me" 
+           style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
+           <h1 style="margin: 0; font-size: 2rem;">Hi, I'm Divine Uwimana</h1>
+    </div>
+    <p>
+      I’m a math and psych major with a passion for data. When I’m not coding or analyzing data, you’ll find me in the Makerspace or listening to some Gospel music.
+    </p>
+  </section>
+  
+  <section id="skills">
+    <h2>Skills</h2>
+    <p>Python, R, SQL, HTML/CSS, Git, Data Visualization, Machine Learning, Statistical Analysis</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li> Designed and 3D printed STEM kits</li>
+      <li> Built world ladder game using skipList data structure</li>
+      <li> Implemented a spell checker and suggestion tool using Trie data structure</li>
+    </ul>
+  </section>
+
+
+  <button id="factBtn">Click for a fun fact</button>
+<p id="factText"></p>
+
+<script>
+  const facts = [
+    "I’ve listened to one song over 200 times!",
+    "I love skincare and know all about it!",
+    ""
+  ];
+
+  document.getElementById("factBtn").addEventListener("click", () => {
+    const randomIndex = Math.floor(Math.random() * facts.length);
+    document.getElementById("factText").textContent = facts[randomIndex];
+  });
+</script>
+
+  <section id="contact">
+    <h2>Get in Touch</h2>
+    <p>Email: uwimanadiv@gmail.com</p>
+    <p>GitHub: <a href="https://github.com/" target="_blank">uwimanad</a></p>
+  </section>
+
+</body>
+</html>
